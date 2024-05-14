@@ -1,5 +1,5 @@
 DJANGO = python src/backend/manage.py
-LOCAL = --settings=config.settings.local_settings
+LOCAL = --settings=config.django.local
 
 runbackserver:
 	$(DJANGO) runserver $(LOCAL)
