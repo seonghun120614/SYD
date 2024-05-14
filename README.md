@@ -5,6 +5,9 @@ Web Programming Assignment &amp; Usage of My web blog
 - [ ] Initialize Django with Django REST framework
   - [✓] Create Django Project
   - [✓] Revise file structures for my project
+  - [✓] Revise `src/backend/config/django/base.py`
+  - [✓] Create `src/backend/env.py` for environment variables
+  - [✓] Devide configuration for local environment to add `src/backend/config/django/local.py`
 - [ ] Initialize React
 - [ ] Initialize others (config files, folders, ...)
 - [ ] Backend - Create Models & Serializers
