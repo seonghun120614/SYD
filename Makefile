@@ -17,4 +17,4 @@ test:
 	$(DJANGO) test $(LOCAL)
 
 mkrequirements:
-	pip freeze > requirements.txt
+	pip freeze > src/backend/requirements.txt
