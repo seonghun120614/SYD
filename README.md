@@ -3,6 +3,8 @@ Web Programming Assignment &amp; Usage of My web blog
 
 # 🧑🏼‍💻 Requirements
 - [ ] Initialize Django with Django REST framework
+  - [✓] Create Django Project
+  - [✓] Revise file structures for my project
 - [ ] Initialize React
 - [ ] Initialize others (config files, folders, ...)
 - [ ] Backend - Create Models & Serializers
