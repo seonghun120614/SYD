@@ -10,6 +10,7 @@ Web Programming Assignment &amp; Usage of My web blog
   - [✓] Devide configuration for local environment to add `src/backend/config/django/local.py`
   - [✓] Revise `src/backend/config/asgi.py` and `src/backend/config/wsgi.py`
   - [✓] Create `Makefile` for managing and building project
+  - [✓] Install djangorestframework and import
 - [ ] Initialize React
 - [ ] Initialize others (config files, folders, ...)
 - [ ] Backend - Create Models & Serializers

@@ -4,7 +4,9 @@ from config.env import *
 # Application definition
 
 LOCAL_APPS = []
-THIRD_PARTY_APPS = []
+THIRD_PARTY_APPS = [
+    'rest_framework',
+]
 INSTALLED_APPS = [
     # 'django.contrib.admin',
     # 'django.contrib.auth',
