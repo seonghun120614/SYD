@@ -15,3 +15,6 @@ startapp:
 
 test:
 	$(DJANGO) test $(LOCAL)
+
+mkrequirements:
+	pip freeze > requirements.txt
