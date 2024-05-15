@@ -16,6 +16,7 @@ Web Programming Assignment &amp; Usage of My web blog
   - [✓] Create React App & Modify `.gitignore`
   - [✓] Clean unnecessary files or codes
   - [✓] Modify file structure
+  - [✓] Add ESLint and Prettier packages
 
 - [ ] Initialize others (config files, folders, ...)
 - [ ] Backend - Create Models & Serializers
