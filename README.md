@@ -11,7 +11,10 @@ Web Programming Assignment &amp; Usage of My web blog
   - [✓] Revise `src/backend/config/asgi.py` and `src/backend/config/wsgi.py`
   - [✓] Create `Makefile` for managing and building project
   - [✓] Install djangorestframework and import
+
 - [ ] Initialize React
+  - [✓] Create React App & Modify `.gitignore`
+
 - [ ] Initialize others (config files, folders, ...)
 - [ ] Backend - Create Models & Serializers
 - [ ] Backend - Others
