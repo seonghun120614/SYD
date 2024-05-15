@@ -17,6 +17,8 @@ Web Programming Assignment &amp; Usage of My web blog
   - [✓] Clean unnecessary files or codes
   - [✓] Modify file structure
   - [✓] Add ESLint and Prettier packages
+  - [✓] Ready for imigrate CRA to Vite
+  - [✓] Remove CRA project and rename folders and files for division in back
 
 - [ ] Initialize others (config files, folders, ...)
 - [ ] Backend - Create Models & Serializers

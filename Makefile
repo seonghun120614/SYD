@@ -1,20 +1,24 @@
-DJANGO = python src/backend/manage.py
+BACK_PATH = app/back/
+
+PYTHON_VENV = $(BACK_PATH)venv/bin/python
+DJANGO = $(BACK_PATH)manage.py
 LOCAL = --settings=config.django.local
 
+
 runbackserver:
-	$(DJANGO) runserver $(LOCAL)
+	$(PYTHON_VENV) $(DJANGO) runserver $(LOCAL)
 
 makemigrations:
-	$(DJANGO) makemigrations $(LOCAL)
+	$(PYTHON_VENV) $(DJANGO) makemigrations $(LOCAL)
 
 migrate:
-	$(DJANGO) migrate $(LOCAL)
+	$(PYTHON_VENV) $(DJANGO) migrate $(LOCAL)
 
 startapp:
-	$(DJANGO) startapp $(app) $(LOCAL)
+	$(PYTHON_VENV) $(DJANGO) startapp $(app) $(LOCAL)
 
 test:
-	$(DJANGO) test $(LOCAL)
+	$(PYTHON_VENV) $(DJANGO) test $(LOCAL)
 
 mkrequirements:
-	pip freeze > src/backend/requirements.txt
+	$(PYTHON_VENV) -m pip freeze > $(BACK_PATH)requirements.txt
