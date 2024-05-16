@@ -22,6 +22,8 @@ Web Programming Assignment &amp; Usage of My web blog
   - [✓] Add codes `Makefile` for managing and building Vite project
 
 - [ ] Initialize others (config files, folders, ...)
+  - [✓] Setup test api for communication in djangorestframework
+
 - [ ] Backend - Create Models & Serializers
 - [ ] Backend - Others
 - [ ] Frontend - Implements Routing
