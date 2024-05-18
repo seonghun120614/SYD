@@ -24,6 +24,7 @@ Web Programming Assignment &amp; Usage of My web blog
 - [ ] Initialize others (config files, folders, ...)
   - [✓] Setup test api for communication in djangorestframework
   - [✓] Add `app/back/api/models.py` for testing
+  - [✓] Add `app/back/api/serializers.py` for testing
 
 - [ ] Backend - Create Models & Serializers
 - [ ] Backend - Others
