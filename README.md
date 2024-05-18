@@ -21,12 +21,13 @@ Web Programming Assignment &amp; Usage of My web blog
   - [✓] Remove CRA project and rename folders and files for division in back
   - [✓] Add codes `Makefile` for managing and building Vite project
 
-- [ ] Initialize others (config files, folders, ...)
+- [✓] Initialize others (config files, folders, ...)
   - [✓] Setup test api for communication in djangorestframework
   - [✓] Add `app/back/api/models.py` for testing
   - [✓] Add `app/back/api/serializers.py` for testing
   - [✓] Add axios package and setup communication in react
   - [✓] Add django-cors-headers module and setup communication in django
+  - [✓] Modify wrong proxy with proxy for Vite
 
 - [ ] Backend - Create Models & Serializers
 - [ ] Backend - Others

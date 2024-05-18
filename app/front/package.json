@@ -25,10 +25,5 @@
     "prettier": "^3.2.5",
     "vite": "^5.2.0",
     "vite-plugin-prettier": "^0.0.6"
-  },
-  "proxy": {
-    "/": {
-      "target": "http://localhost:8000"
-    }
   }
 }
