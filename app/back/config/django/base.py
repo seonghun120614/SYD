@@ -2,8 +2,9 @@ from config.env import *
 
 
 # Application definition
-
-LOCAL_APPS = []
+LOCAL_APPS = [
+    'api'
+]
 
 THIRD_PARTY_APPS = [
     'rest_framework',
@@ -24,7 +25,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(APPS_DIR, "templates")],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -35,7 +36,6 @@ TEMPLATES = [
     },
 ]
 WSGI_APPLICATION = 'config.wsgi.application'
-
 
 # Database
 DATABASES = {
@@ -55,7 +55,7 @@ AUTH_PASSWORD_VALIDATORS = []
 LANGUAGE_CODE = 'ko-KR'
 TIME_ZONE = 'Asia/Seoul'
 USE_I18N = True
-USE_TZ = True
+USE_TZ = False
 
 
 # Default primary key field type

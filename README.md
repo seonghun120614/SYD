@@ -5,10 +5,10 @@ Web Programming Assignment &amp; Usage of My web blog
 - [✓] Initialize Django with Django REST framework
   - [✓] Create Django Project
   - [✓] Revise file structures for my project
-  - [✓] Revise `src/backend/config/django/base.py`
-  - [✓] Create `src/backend/config/env.py` for environment variables
-  - [✓] Devide configuration for local environment to add `src/backend/config/django/local.py`
-  - [✓] Revise `src/backend/config/asgi.py` and `src/backend/config/wsgi.py`
+  - [✓] Revise `app/back/config/django/base.py`
+  - [✓] Create `app/back/config/env.py` for environment variables
+  - [✓] Devide configuration for local environment to add `app/back/config/django/local.py`
+  - [✓] Revise `app/back/config/asgi.py` and `app/back/config/wsgi.py`
   - [✓] Create `Makefile` for managing and building Django project
   - [✓] Install djangorestframework and import
 
@@ -23,6 +23,7 @@ Web Programming Assignment &amp; Usage of My web blog
 
 - [ ] Initialize others (config files, folders, ...)
   - [✓] Setup test api for communication in djangorestframework
+  - [✓] Add `app/back/api/models.py` for testing
 
 - [ ] Backend - Create Models & Serializers
 - [ ] Backend - Others

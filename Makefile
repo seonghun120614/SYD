@@ -5,21 +5,25 @@ PYTHON_VENV = $(BACK_PATH)venv/bin/python
 DJANGO = $(BACK_PATH)manage.py
 LOCAL = --settings=config.django.local
 
+APP ?= api
 
 runbackserver:
 	$(PYTHON_VENV) $(DJANGO) runserver $(LOCAL)
 
 makemigrations:
-	$(PYTHON_VENV) $(DJANGO) makemigrations $(LOCAL)
+	$(PYTHON_VENV) $(DJANGO) makemigrations $(APP)
 
 migrate:
-	$(PYTHON_VENV) $(DJANGO) migrate $(LOCAL)
+	$(PYTHON_VENV) $(DJANGO) migrate $(APP)
 
-startapp:
-	$(PYTHON_VENV) $(DJANGO) startapp $(app) $(LOCAL)
+showmigrations:
+	$(PYTHON_VENV) $(DJANGO) showmigrations $(APP)
+
+shell:
+	$(PYTHON_VENV) $(DJANGO) shell
 
 test:
-	$(PYTHON_VENV) $(DJANGO) test $(LOCAL)
+	$(PYTHON_VENV) $(DJANGO) test
 
 mkrequirements:
 	$(PYTHON_VENV) -m pip freeze > $(BACK_PATH)requirements.txt
