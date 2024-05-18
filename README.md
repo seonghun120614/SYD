@@ -25,6 +25,8 @@ Web Programming Assignment &amp; Usage of My web blog
   - [✓] Setup test api for communication in djangorestframework
   - [✓] Add `app/back/api/models.py` for testing
   - [✓] Add `app/back/api/serializers.py` for testing
+  - [✓] Add axios package and setup communication in react
+  - [✓] Add django-cors-headers module and setup communication in django
 
 - [ ] Backend - Create Models & Serializers
 - [ ] Backend - Others

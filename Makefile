@@ -1,16 +1,16 @@
 BACK_PATH = app/back/
 FRONT_PATH = app/front/
 
+
 PYTHON_VENV = $(BACK_PATH)venv/bin/python
 DJANGO = $(BACK_PATH)manage.py
 LOCAL = --settings=config.django.local
 
-APP ?= api
 
-runbackserver:
+runback:
 	$(PYTHON_VENV) $(DJANGO) runserver $(LOCAL)
 
-makemigrations:
+mkmigrations:
 	$(PYTHON_VENV) $(DJANGO) makemigrations $(APP)
 
 migrate:
@@ -25,10 +25,16 @@ shell:
 test:
 	$(PYTHON_VENV) $(DJANGO) test
 
-mkrequirements:
+mkrqms:
 	$(PYTHON_VENV) -m pip freeze > $(BACK_PATH)requirements.txt
 
-runfrontserver:
+install:
+	$(PYTHON_VENV) -m pip install -r $(BACK_PATH)requirements.txt
+
+downloadmodule:
+	$(PYTHON_VENV) -m pip install $(MODULE)
+
+runfront:
 	cd $(FRONT_PATH) && yarn dev
 
 build:
