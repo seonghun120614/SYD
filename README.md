@@ -30,9 +30,10 @@ Web Programming Assignment &amp; Usage of My web blog
   - [✓] Modify wrong proxy with proxy for Vite
   - [✓] Initialize all unnecessary settings for pre-test
 
-- [ ] Backend - Create Models & Serializers
+- [ ] Backend - Create Models & Serializers or Others
   - [✓] Create CSVFile Models for request
-- [ ] Backend - Others
+  - [✓] Create Serializers 
+
 - [ ] Frontend - Implements Routing
 - [ ] Frontend - UI & Component Design
 - [ ] Frontend - Styling with Sass & Bootstrap
