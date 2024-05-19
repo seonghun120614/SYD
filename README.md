@@ -31,6 +31,7 @@ Web Programming Assignment &amp; Usage of My web blog
   - [✓] Initialize all unnecessary settings for pre-test
 
 - [ ] Backend - Create Models & Serializers
+  - [✓] Create CSVFile Models for request
 - [ ] Backend - Others
 - [ ] Frontend - Implements Routing
 - [ ] Frontend - UI & Component Design
