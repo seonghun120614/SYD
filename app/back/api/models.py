@@ -1,9 +1,9 @@
 from django.db import models
 
+class UploadedFile(models.Model):
+  title = models.CharField(max_length=100)
+  file = models.FileField(upload_to='/')
+  uploaded_at = models.DateTimeField(auto_now_add=True)
 
-class TestModel(models.Model):
-  created = models.DateTimeField(auto_now_add=True)
-  name = models.CharField(max_length=10, blank=True, default='')  
-  class Meta:
-    ordering = ['created']
-    
+  def __str__(self):
+    return self.title

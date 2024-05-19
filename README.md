@@ -28,6 +28,7 @@ Web Programming Assignment &amp; Usage of My web blog
   - [✓] Add axios package and setup communication in react
   - [✓] Add django-cors-headers module and setup communication in django
   - [✓] Modify wrong proxy with proxy for Vite
+  - [✓] Initialize all unnecessary settings for pre-test
 
 - [ ] Backend - Create Models & Serializers
 - [ ] Backend - Others
