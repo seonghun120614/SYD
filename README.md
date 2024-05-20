@@ -32,8 +32,8 @@ Web Programming Assignment &amp; Usage of My web blog
 
 - [ ] Backend - Create Models & Serializers
 - [ ] Backend - Others
-- [ ] Frontend - Implements Routing
-- [ ] Frontend - UI & Component Design
+- [ ] Frontend - Implements Components & Features and Design Layout in App
+  - [✓] Create `CSVUpload.jsx` components
 - [ ] Frontend - Styling with Sass & Bootstrap
 - [ ] Validate Unit Test
 - [ ] Validate Integrated Test
