@@ -3,5 +3,5 @@ from .views import CSVFileAPIView
 
 
 urlpatterns = [
-  path('csv_files/', CSVFileAPIView.as_view())
+  path('api/', CSVFileAPIView.as_view())
 ]
