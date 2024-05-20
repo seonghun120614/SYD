@@ -34,6 +34,7 @@ Web Programming Assignment &amp; Usage of My web blog
   - [✓] Create `CSVFile` Models for request
   - [✓] Create `CSVFileSerializer` Serializers
   - [✓] Create `CSVFileAPIView` APIView class
+  - [✓] Create "csv_files/" urlpattern and binding to `CSVFileAPIView`
 
 - [ ] Frontend - Implements Routing
 - [ ] Frontend - UI & Component Design
