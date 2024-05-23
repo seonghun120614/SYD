@@ -33,9 +33,11 @@ Web Programming Assignment &amp; Usage of My web blog
 - [ ] Backend - Create Models & Serializers
 - [ ] Backend - Others
 - [ ] Frontend - Implements Components & Features and Design Layout in App
-  - [✓] Create `CSVUpload.jsx` components
-  - [✓] Create `Button.jsx` components
-  - [✓] Create `Plot.jsx` components
+  - [✓] Create a `CSVUpload.jsx` component
+  - [✓] Create a `DownloadButton.jsx` component
+  - [✓] Create a `Plot.jsx` component
+  - [✓] Create a `Block.jsx` component
+  - [✓] Create a `Block.jsx` component
 
 - [ ] Frontend - Styling with Sass & Bootstrap
 - [ ] Validate Unit Test
