@@ -30,11 +30,12 @@ Web Programming Assignment &amp; Usage of My web blog
   - [✓] Modify wrong proxy with proxy for Vite
   - [✓] Initialize all unnecessary settings for pre-test
 
-- [ ] Backend - Create Models & Serializers or Others
+- [✓] Backend - Create Models & Serializers or Others
   - [✓] Create `CSVFile` Models for request
   - [✓] Create `CSVFileSerializer` Serializers
   - [✓] Create `CSVFileAPIView` APIView class
   - [✓] Create "api/" urlpattern and binding to `CSVFileAPIView`
+  - [✓] Add brief comments for every codes
 
 - [ ] Frontend - Implements Routing
 - [ ] Frontend - UI & Component Design

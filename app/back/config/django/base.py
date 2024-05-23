@@ -1,7 +1,7 @@
 from config.env import *
 
 
-# Application definition
+# Application import
 LOCAL_APPS = [
     'api'
 ]
@@ -18,6 +18,7 @@ INSTALLED_APPS = [
     *LOCAL_APPS,
 ]
 
+# Middleware config
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -26,8 +27,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
 ]
 
-ROOT_URLCONF = 'config.urls'
 
+# Template config
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -42,9 +43,10 @@ TEMPLATES = [
     },
 ]
 
+# Synchronous server config
 WSGI_APPLICATION = 'config.wsgi.application'
 
-# Database
+# Database config
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -53,11 +55,11 @@ DATABASES = {
     }
 }
 
-# Password validation
+# Password validation config
 AUTH_PASSWORD_VALIDATORS = []
 
 
-# Internationalization
+# Internationalization config
 LANGUAGE_CODE = 'ko-KR'
 TIME_ZONE = 'Asia/Seoul'
 USE_I18N = True
