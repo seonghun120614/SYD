@@ -1,14 +1,16 @@
 import React from "react";
 
 import CSVUpload from './components/CSVUpload';
-import DownloadButton from './components/DownloadButton';
+import Button from './components/Button';
+import Plot from './components/Plot';
 
 
 function App() {
   return (
     <div>
       <CSVUpload />
-      <DownloadButton />
+      <Button />
+      <Plot />
     </div>
   );
 }
