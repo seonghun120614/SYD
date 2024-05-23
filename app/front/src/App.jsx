@@ -1,9 +1,9 @@
 import React from "react";
 
-import CSVUpload from './components/CSVUpload';
+import CSVUpload from './components/CSVUpload/CSVUpload';
 import Body from './layouts/Body';
-import Header from './layouts/Header';
-import Footer from './layouts/Footer';
+import Header from './layouts/Header/Header';
+import Footer from './layouts/Footer/Footer';
 
 
 const App = () => {
