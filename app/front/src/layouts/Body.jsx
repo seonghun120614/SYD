@@ -9,11 +9,11 @@ function Body() {
   const blocks = [1, 2, 3, 4, 5];
 
   return (
-    <body>
+    <main>
       {blocks.map(() => (
         <Block />
       ))}
-    </body>
+    </main>
   );
 }
 
