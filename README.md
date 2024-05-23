@@ -39,12 +39,12 @@ Web Programming Assignment &amp; Usage of Data Visualization
   - [✓] Create a `Block.jsx` component
   - [✓] Create a `Block.jsx` component & add comments
   - [✓] Create a `Loading.jsx` component
-  - [ ] Create a `RadialMenu.jsx` component
   - [ ] Create a `Header.jsx` layout
   - [ ] Create a `Body.jsx` layout
   - [ ] Create a `Footer.jsx` layout
   - [ ] Create a `BlockLayout.jsx` layout
   - [ ] Create a `HomePage.jsx` page
+  - [ ] Create a `RadialMenu.jsx` component
 
 - [ ] Frontend - Styling with Sass & Bootstrap
   - [ ] Create a `main.scss` for homepage styling

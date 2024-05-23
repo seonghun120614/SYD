@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './DownloadButton';
+import DownloadButton from './DownloadButton';
 import Plot from './Plot'
 
 
@@ -11,7 +11,7 @@ function Block() {
   return (
     <div class="block">
       <Plot />
-      <Button />
+      <DownloadButton />
     </div>
   );
 }
