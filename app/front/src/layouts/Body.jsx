@@ -2,7 +2,8 @@ import React from "react";
 
 import Block from "../components/Block";
 
-function Body() {
+
+const Body = () => {
   /**
    * Body has many blocks and showing 2 columns grid
    */

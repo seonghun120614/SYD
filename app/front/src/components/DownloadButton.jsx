@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function DownloadButton() {
+const DownloadButton = () => {
   /**
    * Download button for linked plot in Block tag.
    */

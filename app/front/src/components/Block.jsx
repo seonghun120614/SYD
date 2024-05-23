@@ -3,7 +3,7 @@ import DownloadButton from './DownloadButton';
 import Plot from './Plot'
 
 
-function Block() {
+const Block = () => {
   /**
    * The Block component represents a block that displays a plot and a download button 
    * to the user.

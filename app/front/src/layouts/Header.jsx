@@ -1,12 +1,12 @@
 import React from "react";
 
 
-function Header() {
+const Header = () => {
   return (
     <header>
       <h1>Show Your Data</h1>
     </header>
   );
-}
+};
 
 export default Header;

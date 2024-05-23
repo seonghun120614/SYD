@@ -1,6 +1,6 @@
 import React from "react";
 
-function CSVUpload() {
+const CSVUpload = () => {
   /*
    To get the csv file from client
   */

@@ -41,6 +41,7 @@ Web Programming Assignment &amp; Usage of Data Visualization
   - [✓] Create a `Header.jsx` layout
   - [✓] Create a `Body.jsx` layout
   - [✓] Create a `Footer.jsx` layout
+  - [✓] Modify code style about whole functions
   - [ ] Create a `HomePage.jsx` page
   - [ ] Create a `RadialMenu.jsx` component
 

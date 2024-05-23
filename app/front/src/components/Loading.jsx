@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function Loading() {
+const Loading = () => {
   /**
    * Component representing a loading indicator.
    * It overlays the screen with a semi-transparent black background and displays the message "Loading...".

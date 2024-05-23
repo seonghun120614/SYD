@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer() {
+const Footer = () => {
   return (
     <footer>
       <span><b>Created by</b> Seonghun Park<br /><b>Contact</b> seonghun120614@gmail.com</span>

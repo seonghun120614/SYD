@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function Plot() {
+const Plot = () => {
   /**
    * Using api and draw image about received byteString based 64 bits
    */
