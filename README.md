@@ -45,9 +45,15 @@ Web Programming Assignment &amp; Usage of Data Visualization
   - [ ] Create a `RadialMenu.jsx` component
 
 - [ ] Frontend - Styling with Sass & Bootstrap
-  - [ ] Create a `main.scss` for homepage styling
-  - [ ] Create a `variables.scss` for consistent styling
-  - [ ] Create a `mixin.scss` for animation effects.
+  - [ ] Create a `CSVUpload.css`
+  - [ ] Create a `DownloadButton.css`
+  - [ ] Create a `Plot.css`
+  - [ ] Create a `Block.css`
+  - [ ] Create a `Loading.css`
+  - [ ] Create a `Header.css`
+  - [ ] Create a `Body.css`
+  - [ ] Create a `Footer.css`
+  - [ ] Create a `RadialMenu.css`
 
 - [ ] Validate Unit Test
 - [ ] Validate Integrated Test
