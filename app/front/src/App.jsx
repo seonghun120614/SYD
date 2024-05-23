@@ -1,7 +1,7 @@
 import React from "react";
 
-import CSVUpload from './components/CSVUpload/CSVUpload';
-import Body from './layouts/Body';
+
+import Body from "./layouts/Body/Body";
 import Header from './layouts/Header/Header';
 import Footer from './layouts/Footer/Footer';
 
@@ -11,7 +11,6 @@ const App = () => {
     <div>
       <Header />
       <Body />
-      <CSVUpload />
       <Footer />
     </div>
   );

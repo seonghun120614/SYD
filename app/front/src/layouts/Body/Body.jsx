@@ -1,7 +1,6 @@
 import React from "react";
 
-import Block from "../components/Block";
-
+import Block from "../../components/Block/Block"
 
 const Body = () => {
   /**
