@@ -38,7 +38,7 @@ Web Programming Assignment &amp; Usage of Data Visualization
   - [✓] Create a `Plot.jsx` component
   - [✓] Create a `Block.jsx` component
   - [✓] Create a `Block.jsx` component & add comments
-  - [ ] Create a `Loading.jsx` component
+  - [✓] Create a `Loading.jsx` component
   - [ ] Create a `RadialMenu.jsx` component
   - [ ] Create a `Header.jsx` layout
   - [ ] Create a `Body.jsx` layout
