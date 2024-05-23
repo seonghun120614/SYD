@@ -1,5 +1,5 @@
 # MyBlog
-Web Programming Assignment &amp; Usage of My web blog
+Web Programming Assignment &amp; Usage of Data Visualization
 
 # 🧑🏼‍💻 Requirements
 - [✓] Initialize Django with Django REST framework
@@ -37,9 +37,20 @@ Web Programming Assignment &amp; Usage of My web blog
   - [✓] Create a `DownloadButton.jsx` component
   - [✓] Create a `Plot.jsx` component
   - [✓] Create a `Block.jsx` component
-  - [✓] Create a `Block.jsx` component
+  - [✓] Create a `Block.jsx` component & add comments
+  - [ ] Create a `Loading.jsx` component
+  - [ ] Create a `RadialMenu.jsx` component
+  - [ ] Create a `Header.jsx` layout
+  - [ ] Create a `Body.jsx` layout
+  - [ ] Create a `Footer.jsx` layout
+  - [ ] Create a `BlockLayout.jsx` layout
+  - [ ] Create a `HomePage.jsx` page
 
 - [ ] Frontend - Styling with Sass & Bootstrap
+  - [ ] Create a `main.scss` for homepage styling
+  - [ ] Create a `variables.scss` for consistent styling
+  - [ ] Create a `mixin.scss` for animation effects.
+
 - [ ] Validate Unit Test
 - [ ] Validate Integrated Test
 - [ ] Refactoring and Find Lazy Loading
