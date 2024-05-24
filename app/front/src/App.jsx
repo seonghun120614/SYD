@@ -1,12 +1,12 @@
 import React from "react";
 
-import DownloadButton from "./components/Block/DownloadButton";
+import Plot from "./components/Block/Plot";
 
 
 const App = () => {
   return (
     <div>
-      <DownloadButton />
+      <Plot />
     </div>
   );
 }

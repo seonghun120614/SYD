@@ -1,0 +1,11 @@
+.plot {
+  width: 550px;
+  height: 225px;
+  overflow-x: scroll;
+}
+
+img {
+  height: inherit;
+}
+
+/*# sourceMappingURL=Plot.css.map */
