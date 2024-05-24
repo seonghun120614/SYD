@@ -1,17 +1,12 @@
 import React from "react";
 
-
-import Body from "./layouts/Body/Body";
-import Header from './layouts/Header/Header';
-import Footer from './layouts/Footer/Footer';
+import CSVUpload from "./components/CSVUpload/CSVUpload";
 
 
 const App = () => {
   return (
     <div>
-      <Header />
-      <Body />
-      <Footer />
+      <CSVUpload />
     </div>
   );
 }
