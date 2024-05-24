@@ -1,12 +1,12 @@
 import React from "react";
 
-import Loading from "./components/Loading/Loading";
+import Header from "./layouts/Header/Header";
 
 
 const App = () => {
   return (
     <div>
-      <Loading />
+      <Header />
     </div>
   );
 }

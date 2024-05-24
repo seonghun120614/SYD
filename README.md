@@ -52,7 +52,7 @@ Web Programming Assignment &amp; Usage of Data Visualization
   - [✓] Styling size of `Plot.jsx` for long width graph (It must be implemented with horizontal scroll)
   - [✓] Styling `Block.jsx` with all components
   - [✓] Create a `Loading.css`
-  - [ ] Create a `Header.css`
+  - [✓] Create a `Header.css`
   - [ ] Create a `Body.css`
   - [ ] Create a `Footer.css`
   - [ ] Create a `RadialMenu.css`
