@@ -48,7 +48,7 @@ Web Programming Assignment &amp; Usage of Data Visualization
   - [✓] Add SASS compile command in `Makefile`
   - [✓] Add react-bootstrap and react-bootstrap-icons for design
   - [✓] Create a `CSVUpload.css`
-  - [ ] Create a `DownloadButton.css`
+  - [✓] Styling a `DownloadButton.jsx` component with bootstrap
   - [ ] Create a `Plot.css`
   - [ ] Create a `Block.css`
   - [ ] Create a `Loading.css`

@@ -1,12 +1,12 @@
 import React from "react";
 
-import CSVUpload from "./components/CSVUpload/CSVUpload";
+import DownloadButton from "./components/Block/DownloadButton";
 
 
 const App = () => {
   return (
     <div>
-      <CSVUpload />
+      <DownloadButton />
     </div>
   );
 }

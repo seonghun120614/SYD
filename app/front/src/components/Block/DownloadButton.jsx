@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 
 
 const DownloadButton = () => {
@@ -10,9 +11,9 @@ const DownloadButton = () => {
   };
 
   return (
-    <button onClick={handleDownload}>
+    <Button variant="dark" onClick={handleDownload}>
       Download
-    </button>
+    </Button>
   );
 }
 
