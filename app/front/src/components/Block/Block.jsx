@@ -3,6 +3,8 @@ import React from 'react';
 import DownloadButton from './DownloadButton';
 import Plot from './Plot'
 
+import './Block.css'
+
 
 const Block = () => {
   /**
@@ -10,9 +12,13 @@ const Block = () => {
    * to the user.
    */
   return (
-    <div class="block">
-      <Plot />
-      <DownloadButton />
+    <div className="block">
+      <div className="plot_position">
+        <Plot />
+      </div>
+      <div className="button_position">
+        <DownloadButton />
+      </div>
     </div>
   );
 }

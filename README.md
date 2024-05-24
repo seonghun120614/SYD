@@ -49,8 +49,8 @@ Web Programming Assignment &amp; Usage of Data Visualization
   - [✓] Add react-bootstrap and react-bootstrap-icons for design
   - [✓] Create a `CSVUpload.css`
   - [✓] Styling a `DownloadButton.jsx` component with bootstrap
-  - [✓] Styling size of `Plot.css` for long width graph (It must be implemented with horizontal scroll)
-  - [ ] Create a `Block.css`
+  - [✓] Styling size of `Plot.jsx` for long width graph (It must be implemented with horizontal scroll)
+  - [✓] Styling `Block.jsx` with all components
   - [ ] Create a `Loading.css`
   - [ ] Create a `Header.css`
   - [ ] Create a `Body.css`

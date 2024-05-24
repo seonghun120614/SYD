@@ -1,12 +1,12 @@
 import React from "react";
 
-import Plot from "./components/Block/Plot";
+import Block from "./components/Block/Block";
 
 
 const App = () => {
   return (
     <div>
-      <Plot />
+      <Block />
     </div>
   );
 }
