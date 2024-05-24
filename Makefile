@@ -6,7 +6,6 @@ PYTHON_VENV = $(BACK_PATH)venv/bin/python
 DJANGO = $(BACK_PATH)manage.py
 LOCAL = --settings=config.django.local
 
-
 runback:
 	$(PYTHON_VENV) $(DJANGO) runserver $(LOCAL)
 
@@ -46,3 +45,6 @@ build:
 
 lint:
 	cd $(FRONT_PATH) && yarn lint
+
+sas:
+	sass --update ${FRONT_PATH}src

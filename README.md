@@ -45,6 +45,7 @@ Web Programming Assignment &amp; Usage of Data Visualization
   - [ ] Create a `RadialMenu.jsx` component
 
 - [ ] Frontend - Styling with Sass & Bootstrap
+  - [✓] Add SASS compile command in `Makefile`
   - [ ] Create a `CSVUpload.css`
   - [ ] Create a `DownloadButton.css`
   - [ ] Create a `Plot.css`
