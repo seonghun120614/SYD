@@ -55,6 +55,8 @@ Web Programming Assignment &amp; Usage of Data Visualization
   - [✓] Styling a `Header.jsx` with main component `Block.jsx`
   - [✓] Create a `Body.css` & Modify all components' size
   - [✓] Create a `Footer.css`
+  - [ ] Modify a `Body.jsx` layout for testing communication with back server
+    - [ ] Implement Drag & Drop in `CSVUpload` component
   - [ ] Create a `RadialMenu.css`
 
 - [ ] Validate Unit Test

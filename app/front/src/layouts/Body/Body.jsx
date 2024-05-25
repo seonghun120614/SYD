@@ -13,6 +13,7 @@ const Body = () => {
   return (
     <main>
       {
+        // Just for testing
         1 === 1
         ? <CSVUpload />
         : blocks.map(() => {
