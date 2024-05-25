@@ -53,8 +53,8 @@ Web Programming Assignment &amp; Usage of Data Visualization
   - [✓] Styling `Block.jsx` with all components
   - [✓] Create a `Loading.css`
   - [✓] Styling a `Header.jsx` with main component `Block.jsx`
-  - [ ] Create a `Body.css`
-  - [ ] Create a `Footer.css`
+  - [✓] Create a `Body.css` & Modify all components' size
+  - [✓] Create a `Footer.css`
   - [ ] Create a `RadialMenu.css`
 
 - [ ] Validate Unit Test
