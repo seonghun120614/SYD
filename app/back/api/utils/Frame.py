@@ -1,6 +1,8 @@
 import io
 import base64
 
+import matplotlib
+matplotlib.use('Agg')
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -8,8 +10,8 @@ from .binary_string_generator import BinaryStringMethod
 
 
 class Frame(BinaryStringMethod):
-  def __init__(self, name):
-    self.frame = pd.read_csv(name).dropna()
+  def __init__(self, path):
+    self.frame = pd.read_csv(path).dropna()
   
   def get_binary_strings(self):
     try:

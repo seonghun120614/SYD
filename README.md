@@ -35,7 +35,7 @@ Web Programming Assignment &amp; Usage of Data Visualization
   - [✓] Initialize all unnecessary settings for pre-test
 
 
-- [ ] Backend - Create Models & Serializers or Others
+- [✓] Backend - Create Models & Serializers or Others
   - [✓] Create `CSVFile` Model for request, `CSVFileSerializer` Serializer and `CSVFileAPIView` APIView class
 
   - [✓] Implement `BinaryStringGenerator` Pseudo-Interface
@@ -43,6 +43,8 @@ Web Programming Assignment &amp; Usage of Data Visualization
   
   - [✓] Implement `Frame` class which is inherted `BinaryStringGenerator` interface
     - [✓] Make `get_binary_strings()` function
+  
+  - [✓] Remove temp file `test.csv` and reduce class (removing `Graph`)
 
 - [ ] Frontend - Implements Components & Features and Design Layout in App
   - [✓] Styling initial page
