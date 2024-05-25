@@ -1,6 +1,7 @@
 import React from "react";
 
 import Block from "../../components/Block/Block"
+import './Body.css';
 
 const Body = () => {
   /**
@@ -11,7 +12,9 @@ const Body = () => {
   return (
     <main>
       {blocks.map(() => (
-        <Block />
+        <div className="container-item">
+          <Block />
+        </div>
       ))}
     </main>
   );

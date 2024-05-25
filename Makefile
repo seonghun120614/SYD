@@ -46,5 +46,8 @@ build:
 lint:
 	cd $(FRONT_PATH) && yarn lint
 
-sas:
-	sass --update ${FRONT_PATH}src
+.PHONY: watch-sass
+
+watch-sass:
+	@echo "Starting SASS watch..."
+	@bash -c 'while true; do sass --update app/front/src; sleep 1; done'
