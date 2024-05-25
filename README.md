@@ -38,7 +38,7 @@ Web Programming Assignment &amp; Usage of Data Visualization
 - [✓] Backend - Create Models & Serializers or Others
   - [✓] Create `CSVFile` Model for request, `CSVFileSerializer` Serializer and `CSVFileAPIView` APIView class
 
-  - [✓] Implement 
+  - [✓] Implement transferring binary strings to the frontend server
     - [✓] Implement `BinaryStringGenerator` Pseudo-Interface
       - [✓] Define `get_binary_strings()` abstract method
     
