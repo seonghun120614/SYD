@@ -12,6 +12,7 @@ Web Programming Assignment &amp; Usage of Data Visualization
   - [✓] Create `Makefile` for managing and building Django project
   - [✓] Install djangorestframework and import
 
+
 - [✓] Initialize React
   - [✓] Create React App & Modify `.gitignore`
   - [✓] Clean unnecessary files or codes
@@ -20,6 +21,9 @@ Web Programming Assignment &amp; Usage of Data Visualization
   - [✓] Ready for imigrate CRA to Vite
   - [✓] Remove CRA project and rename folders and files for division in back
   - [✓] Add codes `Makefile` for managing and building Vite project
+  - [✓] Add SASS compile command in `Makefile`
+  - [✓] Add react-bootstrap and react-bootstrap-icons for design
+
 
 - [✓] Initialize others (config files, folders, ...)
   - [✓] Setup test api for communication in djangorestframework
@@ -30,39 +34,23 @@ Web Programming Assignment &amp; Usage of Data Visualization
   - [✓] Modify wrong proxy with proxy for Vite
   - [✓] Initialize all unnecessary settings for pre-test
 
+
 - [✓] Backend - Create Models & Serializers or Others
-  - [✓] Create `CSVFile` Models for request
-  - [✓] Create `CSVFileSerializer` Serializers
-  - [✓] Create `CSVFileAPIView` APIView class
-  - [✓] Create "api/" urlpattern and binding to `CSVFileAPIView`
-  - [✓] Add brief comments for every codes
+  - [✓] Create `CSVFile` Model for request, `CSVFileSerializer` Serializer and `CSVFileAPIView` APIView class
+
 
 - [ ] Frontend - Implements Components & Features and Design Layout in App
-  - [✓] Create a `CSVUpload.jsx` component
-  - [✓] Create a `DownloadButton.jsx` component
-  - [✓] Create a `Plot.jsx` component
-  - [✓] Create a `Block.jsx` component & add comments
-  - [✓] Create a `Loading.jsx` component
-  - [✓] Create a `Header.jsx` layout
-  - [✓] Create a `Body.jsx` layout
-  - [✓] Create a `Footer.jsx` layout
-  - [✓] Modify code style about whole functions
-  - [ ] Create a `RadialMenu.jsx` component
+  - [✓] Styling initial page
+    - [✓] Create `CSVUpload.jsx`, `Body.jsx`, `Footer.jsx`, `Header.jsx`
+    - [✓] Create `CSVUpload.scss`, `Body.scss`, `Footer.scss`, `Header.jsx`
+    - [✓] Implement Drag & Drop in `CSVUpload.jsx` component
+  
+  - [✓] Styling Block component
+    - [✓] Create `DownloadButton.jsx`, `Plot.jsx`, `Block.jsx` and `Loading.jsx` components
+    - [✓] Create `DownloadButton.scss`, `Plot.scss`, `Block.scss`, `Loading.scss`
 
-- [ ] Frontend - Styling with Sass & Bootstrap
-  - [✓] Add SASS compile command in `Makefile`
-  - [✓] Add react-bootstrap and react-bootstrap-icons for design
-  - [✓] Create a `CSVUpload.css`
-  - [✓] Styling a `DownloadButton.jsx` component with bootstrap
-  - [✓] Styling size of `Plot.jsx` for long width graph (It must be implemented with horizontal scroll)
-  - [✓] Styling `Block.jsx` with all components
-  - [✓] Create a `Loading.css`
-  - [✓] Styling a `Header.jsx` with main component `Block.jsx`
-  - [✓] Create a `Body.css` & Modify all components' size
-  - [✓] Create a `Footer.css`
-  - [✓] Modify a `Body.jsx` layout for testing communication with back server
-    - [✓] Implement Drag & Drop in `CSVUpload` component
-  - [ ] Create a `RadialMenu.css`
+  - [ ] Styling responsive web design
+    - [ ] Create a `RadialMenu.scss` and `RadialMenu.jsx` component
 
 - [ ] Validate Unit Test
 - [ ] Validate Integrated Test
