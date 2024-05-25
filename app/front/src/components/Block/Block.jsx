@@ -6,7 +6,7 @@ import Plot from './Plot'
 import './Block.css'
 
 
-const Block = () => {
+const Block = (src) => {
   /**
    * The Block component represents a block that displays a plot and a download button 
    * to the user.
@@ -14,7 +14,7 @@ const Block = () => {
   return (
     <div className="block">
       <div className="plot_position">
-        <Plot />
+        <Plot src={src}/>
       </div>
       <div className="button_position">
         <DownloadButton />
