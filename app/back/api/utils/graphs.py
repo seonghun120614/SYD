@@ -41,3 +41,23 @@ class Graph(ABC, BinaryStringMethod):
     binary_data = buf.getvalue()
     binary_string = base64.b64encode(binary_data).encode('utf-8')
     return binary_string
+
+
+class NumericGraph(Graph):
+  
+  def __init__(self, Graph, kinds={'line', 'hist', 'box'}):
+    super().__init__(Graph)
+    self.kinds = kinds
+  
+  def get_binary_strings(self):
+    return super().get_binary_strings()
+
+
+class CategoricalGraph(Graph):
+  
+  def __init__(self, Graph, kinds={'pie', 'bar', 'density'}):
+    super().__init__(Graph)
+    self.kinds = kinds
+  
+  def get_binary_strings(self):
+    return super().get_binary_strings()
