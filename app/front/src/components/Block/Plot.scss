@@ -1,0 +1,13 @@
+.plot {
+  position: absolute;
+  max-height: 250px;
+  max-width: 700px;
+  overflow-x: scroll;
+  border-radius: 10px;
+}
+
+img {
+  width: 1000px;
+  height: 250px;
+  object-fit: cover;
+}

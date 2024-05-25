@@ -6,7 +6,6 @@ PYTHON_VENV = $(BACK_PATH)venv/bin/python
 DJANGO = $(BACK_PATH)manage.py
 LOCAL = --settings=config.django.local
 
-
 runback:
 	$(PYTHON_VENV) $(DJANGO) runserver $(LOCAL)
 
@@ -46,3 +45,9 @@ build:
 
 lint:
 	cd $(FRONT_PATH) && yarn lint
+
+.PHONY: watch-sass
+
+watch-sass:
+	@echo "Starting SASS watch..."
+	@bash -c 'while true; do sass --update app/front/src; sleep 1; done'
