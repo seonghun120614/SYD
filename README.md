@@ -37,12 +37,12 @@ Web Programming Assignment &amp; Usage of Data Visualization
 
 - [ ] Backend - Create Models & Serializers or Others
   - [✓] Create `CSVFile` Model for request, `CSVFileSerializer` Serializer and `CSVFileAPIView` APIView class
+
+  - [✓] Implement `BinaryStringGenerator` Pseudo-Interface
+    - [✓] Define `get_binary_strings()` abstract method
   
-  - [ ] Implement `BinaryStringGenerator` Pseudo-Interface
-    - [ ] Define `get_binary_strings()` abstract method
-  
-  - [ ] Implement `Frame` class which is inherted `BinaryStringGenerator` interface
-    - [ ] Make `get_binary_strings()` function
+  - [✓] Implement `Frame` class which is inherted `BinaryStringGenerator` interface
+    - [✓] Make `get_binary_strings()` function
   
   - [ ] Implement `Graph` abstract class which is inherited `BinaryStringGenerator` interface
     - [ ] Make `image_to_binary()` static method
