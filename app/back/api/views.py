@@ -1,3 +1,8 @@
+import os
+import json
+
+from django.conf import settings
+
 from rest_framework.status import (
   HTTP_200_OK,
   HTTP_201_CREATED,
@@ -5,8 +10,10 @@ from rest_framework.status import (
 )
 from rest_framework.views import APIView
 from rest_framework.views import Response
+
 from .serializers import CSVFileSerializer
 from .models import CSVFile
+from .utils.frame import Frame
 
 
 class CSVFileAPIView(APIView):
@@ -30,8 +37,10 @@ class CSVFileAPIView(APIView):
     Returns:
       Response: A response containing serialized CSVFile objects.
     """
+    
     csv_files = CSVFile.objects.all()
     serializer = CSVFileSerializer(csv_files, many=True)
+    
     return Response(serializer.data, status=HTTP_200_OK)
   
   def post(self, request):
@@ -46,8 +55,15 @@ class CSVFileAPIView(APIView):
       or errors if the provided data is invalid.
     """
     serializer = CSVFileSerializer(data=request.data)
+    
     if serializer.is_valid():
       serializer.save()
-      return Response(serializer.data, status=HTTP_201_CREATED)
+      
+      title = serializer.validated_data['title']
+      f = Frame(os.path.join(settings.MEDIA_ROOT, title+'.csv'))
+      
+      json_string = json.dumps(f.get_binary_strings())
+      return Response(json_string, status=HTTP_201_CREATED)
+    
     return Response(serializer.errors, status=HTTP_400_BAD_REQUEST)
     
