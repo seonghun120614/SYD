@@ -1,6 +1,7 @@
 import React from "react";
 
-import Block from "../../components/Block/Block"
+import Block from "../../components/Block/Block";
+import CSVUpload from "../../components/CSVUpload/CSVUpload";
 import './Body.css';
 
 const Body = () => {
@@ -11,11 +12,15 @@ const Body = () => {
 
   return (
     <main>
-      {blocks.map(() => (
-        <div className="container-item">
-          <Block />
-        </div>
-      ))}
+      {
+        1 === 1
+        ? <CSVUpload />
+        : blocks.map(() => {
+          <div className="container-item">
+            <Block />
+          </div>
+        })
+      }
     </main>
   );
 }
