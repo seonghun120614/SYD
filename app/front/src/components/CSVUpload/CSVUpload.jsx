@@ -11,20 +11,25 @@ const CSVUpload = () => {
   /*
   To get the csv file from client
   */
-  const [csvFile, setCsvFile] = useState(null);
   const handleDragOver = (event) => event.preventDefault();
-
-  const handleDrop = (event) => {
+  const [numOfFiles, setNumOfFiles] = useState(0);
+  const handleDrop = async (event) => {
     event.preventDefault();
-    const files = event.dataTransfer.files;
 
+    const files = event.dataTransfer.files;
     if (!(files.length === 1 & files[0].name.endsWith(".csv")))
       return;
-    setCsvFile(files[0]);
+    setNumOfFiles(files.length);
 
+    // Make form
     const formData = new FormData();
-    formData.append(files[0]);
-    const response = fetch('/api', {
+    const title = files[0].name.split('.')[0];
+    const csv = files[0];
+    formData.append('title', title);
+    formData.append('csv', csv);
+
+    // Request
+    const response = await fetch('/api/upload', {
       method: 'POST',
       body: formData
     });
@@ -49,9 +54,7 @@ const CSVUpload = () => {
         <br/>
         <p>Load your csv file</p>
         <p>{
-          csvFile
-          ? csvFile.name
-          : "Please upload one file"
+          numOfFiles === 1 ? "Success" : "Please upload one file"
         }</p>
       </label>
     </form>

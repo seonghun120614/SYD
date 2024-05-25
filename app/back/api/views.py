@@ -45,9 +45,9 @@ class CSVFileAPIView(APIView):
       Response: A response containing the serialized CSVFile object if creation is successful,
       or errors if the provided data is invalid.
     """
-    with CSVFileSerializer(data=request.data) as serializer:
-      if serializer.is_valid():
-        serializer.save()
-        return Response(serializer.data, status=HTTP_201_CREATED)
-      return Response(serializer.errors, status=HTTP_400_BAD_REQUEST)
+    serializer = CSVFileSerializer(data=request.data)
+    if serializer.is_valid():
+      serializer.save()
+      return Response(serializer.data, status=HTTP_201_CREATED)
+    return Response(serializer.errors, status=HTTP_400_BAD_REQUEST)
     
