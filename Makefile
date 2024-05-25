@@ -30,6 +30,9 @@ mkrqms:
 install:
 	$(PYTHON_VENV) -m pip install -r $(BACK_PATH)requirements.txt
 
+pipinstall:
+	$(PYTHON_VENV) -m pip install $(ARG)
+
 reset:
 	find $(BACK_PATH)api/migrations/ -not -name '__init__.py' -delete
 	rm $(BACK_PATH)db.sqlite3
