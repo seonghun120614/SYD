@@ -1,4 +1,4 @@
-# MyBlog
+# SYD - Show Your Data
 Web Programming Assignment &amp; Usage of Data Visualization
 
 # 🧑🏼‍💻 Requirements
@@ -35,9 +35,16 @@ Web Programming Assignment &amp; Usage of Data Visualization
   - [✓] Initialize all unnecessary settings for pre-test
 
 
-- [✓] Backend - Create Models & Serializers or Others
+- [ ] Backend - Create Models & Serializers or Others
   - [✓] Create `CSVFile` Model for request, `CSVFileSerializer` Serializer and `CSVFileAPIView` APIView class
-
+  - [ ] Implement `Frame` Class
+    - [ ] Make `getBinaryStrings()` function
+  - [ ] Implement `Graph` Interface
+    - [ ] Make `getBinaryString()` function
+  - [ ] Implement `NumericalGraph` Class
+    - [ ] Implement `getBinaryString()` function
+  - [ ] Implement `CategoricalGraph` Class
+    - [ ] `getBinaryString()` function
 
 - [ ] Frontend - Implements Components & Features and Design Layout in App
   - [✓] Styling initial page
@@ -45,9 +52,12 @@ Web Programming Assignment &amp; Usage of Data Visualization
     - [✓] Create `CSVUpload.scss`, `Body.scss`, `Footer.scss`, `Header.jsx`
     - [✓] Implement Drag & Drop in `CSVUpload.jsx` component
   
-  - [✓] Styling Block component
+  - [ ] Styling Block component
     - [✓] Create `DownloadButton.jsx`, `Plot.jsx`, `Block.jsx` and `Loading.jsx` components
     - [✓] Create `DownloadButton.scss`, `Plot.scss`, `Block.scss`, `Loading.scss`
+    - [ ] Implement loading screen
+    - [ ] Implement visualizing graphs with response
+    - [ ] Implement download function
 
   - [ ] Styling responsive web design
     - [ ] Create a `RadialMenu.scss` and `RadialMenu.jsx` component
