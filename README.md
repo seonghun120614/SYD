@@ -43,15 +43,6 @@ Web Programming Assignment &amp; Usage of Data Visualization
   
   - [✓] Implement `Frame` class which is inherted `BinaryStringGenerator` interface
     - [✓] Make `get_binary_strings()` function
-  
-  - [✓] Implement `Graph` abstract class which is inherited `BinaryStringGenerator` interface
-    - [✓] Make `image_to_binary()` static method
-  
-  - [✓] Implement `NumericalGraph` class which is inherited `Graph` abstract class
-    - [✓] Implement `get_binary_string()` function
-  
-  - [✓] Implement `CategoricalGraph` class which is inherited `Graph` abstract class
-    - [✓] Implement `get_binary_string()` function
 
 - [ ] Frontend - Implements Components & Features and Design Layout in App
   - [✓] Styling initial page
