@@ -41,7 +41,7 @@ class CSVFileAPIView(APIView):
     csv_files = CSVFile.objects.all()
     serializer = CSVFileSerializer(csv_files, many=True)
     
-    return Response(serializer.data, status=HTTP_200_OK)
+    return Response(serializer.data)
   
   def post(self, request):
     """
@@ -62,8 +62,8 @@ class CSVFileAPIView(APIView):
       title = serializer.validated_data['title']
       f = Frame(os.path.join(settings.MEDIA_ROOT, title+'.csv'))
       
-      json_string = json.dumps(f.get_binary_strings())
+      json_string = f.get_binary_strings()
+
       return Response(json_string, status=HTTP_201_CREATED)
     
     return Response(serializer.errors, status=HTTP_400_BAD_REQUEST)
-    

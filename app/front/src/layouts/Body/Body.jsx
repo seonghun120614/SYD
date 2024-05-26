@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, {
+  useState,
+  useEffect
+} from "react";
 
 import Block from "../../components/Block/Block";
 import CSVUpload from "../../components/CSVUpload/CSVUpload";
@@ -12,6 +15,7 @@ const Body = () => {
     const formData = new FormData();
     const title = file.name.split('.')[0];
     const csv = file;
+    console.log(csv);
 
     formData.append('title', title);
     formData.append('csv', csv);
@@ -24,11 +28,8 @@ const Body = () => {
       });
 
       if (res.ok) {
-        const data = await res.json();
-        setResponse(data); // 응답 데이터를 상태로 업데이트
-      } else {
-        setResponse(null);
-        console.log('Failed Loading');
+        const json = await res.json();
+        setResponse(json);
       }
     } catch (error) {
       console.error('Error:', error);
@@ -40,14 +41,13 @@ const Body = () => {
       {response === null ? (
         <CSVUpload onFileUpload={handleFileUpload} />
       ) : (
-        <div className="container-item">
-          {response.map((object) => (
-            <div key={object.id}>
-              {object.name}
+        <>
+          {response.map((item) => (
+            <div className="container-item">
+              <Block src={`data:image/png;base64,${item}`} />
             </div>
           ))}
-          {/* <Block src={src}/> */}
-        </div>
+        </>
       )}
     </main>
   );

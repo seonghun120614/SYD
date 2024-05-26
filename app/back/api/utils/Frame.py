@@ -15,23 +15,23 @@ class Frame(BinaryStringMethod):
   
   def get_binary_strings(self):
     try:
-      result = dict()
+      result = []
       columns = self.frame.columns
       
       for col in columns:
         series = self.frame[col].dropna()
         
         if series.dtype == "float64":
-          result[col] = Frame.image_to_binary(series, 'hist')
-        
+          result.append(Frame.image_to_binary(series, 'hist'))
         elif series.dtype == 'object':
           series = series.value_counts()
-          result[col] = Frame.image_to_binary(series, 'pie')
+          result.append(Frame.image_to_binary(series, 'pie'))
       
       return result
-  
+    
     except Exception as e:
       print(e)
+      return {}
   
   
   @classmethod
@@ -40,14 +40,16 @@ class Frame(BinaryStringMethod):
     if not isinstance(series, pd.Series):
       raise TypeError("The wrong argument received. It must be the instance of pandas.Series")
     
-    fig, ax = plt.subplots()
-    series.plot(ax=ax, kind=kind)
+    with io.BytesIO() as buf:
+      fig, ax = plt.subplots()
+      series.plot(ax=ax, kind=kind)
+      
+      plt.savefig(buf, format='png')
+      plt.close(fig)
+      
+      buf.seek(0)
+      binary_data = buf.getvalue()
+      binary_string = base64.b64encode(binary_data).decode('utf-8')
     
-    buf = io.BytesIO()
-    plt.savefig(buf, format='png')
-    plt.close(fig)
-    buf.seek(0)
-    
-    binary_data = buf.getvalue()
-    binary_string = base64.b64encode(binary_data).decode('utf-8')
     return binary_string
+
