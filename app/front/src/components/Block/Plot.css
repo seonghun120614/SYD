@@ -7,9 +7,9 @@
 }
 
 img {
-  width: 1000px;
-  height: 250px;
-  object-fit: cover;
+  width: auto;
+  max-height: 250px;
+  object-fit: fill;
 }
 
 /*# sourceMappingURL=Plot.css.map */
