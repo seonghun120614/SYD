@@ -43,7 +43,7 @@ const Body = () => {
 
   return (
     <main>
-      <Modal isOpen={isLoading} />
+      <Modal isOpen={isLoading} text={"Loading..."} />
       {response === null ? (
         <CSVUpload onFileUpload={handleFileUpload} />
       ) : (
