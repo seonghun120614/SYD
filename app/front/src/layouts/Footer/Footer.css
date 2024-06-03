@@ -6,4 +6,10 @@ footer {
   font-size: 0.8em;
 }
 
+@media screen and (max-width: 768px) {
+  footer {
+    font-size: 0.5em;
+  }
+}
+
 /*# sourceMappingURL=Footer.css.map */

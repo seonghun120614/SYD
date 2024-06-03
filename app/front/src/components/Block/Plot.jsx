@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Plot.css'
+import './Plot.css';
 
 const Plot = ({ src }) => {
   /**

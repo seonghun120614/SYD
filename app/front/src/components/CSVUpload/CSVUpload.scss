@@ -1,9 +1,16 @@
+
 #upload_button {
-  width: 60rem;
+  width: 90vw;
   height: 35rem;
   border: dashed black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  #upload_button {
+    width: 90vw;
+  }
 }

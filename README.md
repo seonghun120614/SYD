@@ -63,8 +63,8 @@ Web Programming Assignment &amp; Usage of Data Visualization
       - [✓] Implement loading screen in `Modal.jsx`
     - [✓] Implement download function
 
-  - [ ] Styling responsive web design
-    - [ ] Create a `RadialMenu.scss` and `RadialMenu.jsx` component
+  - [✓] Styling responsive web design
+  - [ ] Create a `RadialMenu.scss` and `RadialMenu.jsx` component
 
 - [ ] Validate Unit Test
 - [ ] Validate Integrated Test
