@@ -46,6 +46,8 @@ Web Programming Assignment &amp; Usage of Data Visualization
       - [✓] Make `get_binary_strings()` function
   
   - [✓] Remove temp file `test.csv` and reduce class (removing `Graph`)
+  - [ ] Modify `frame.py` to add more graph types
+  - [ ] Add title in graph
 
 - [ ] Frontend - Implements Components & Features and Design Layout in App
   - [✓] Styling initial page
@@ -57,8 +59,9 @@ Web Programming Assignment &amp; Usage of Data Visualization
     - [✓] Create `DownloadButton.jsx`, `Plot.jsx`, `Block.jsx` and `Loading.jsx` components
     - [✓] Create `DownloadButton.scss`, `Plot.scss`, `Block.scss`, `Loading.scss`
     - [✓] Implement visualizing graphs with response
-    - [ ] Implement loading screen
-    - [ ] Implement download function
+    - [ ] With modal window technique
+      - [ ] Implement loading screen
+      - [ ] Implement download function
 
   - [ ] Styling responsive web design
     - [ ] Create a `RadialMenu.scss` and `RadialMenu.jsx` component
