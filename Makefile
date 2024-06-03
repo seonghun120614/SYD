@@ -23,7 +23,7 @@ shell:
 
 test:
 	$(PYTHON_VENV) $(DJANGO) test $(BACK_PATH)tests
-	rm migrate mkmigrations
+	rm $(BACK_PATH)media/*.*
 
 mkrqms:
 	$(PYTHON_VENV) -m pip freeze > $(BACK_PATH)requirements.txt
