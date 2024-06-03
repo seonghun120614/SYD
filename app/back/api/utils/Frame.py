@@ -45,8 +45,8 @@ class Frame(BinaryStringMethod):
 
       # Plot each series in the list with the corresponding kind
       for ax, kind in zip(axes, kinds):
+        ax.set_title(series.name)
         series.plot(ax=ax, kind=kind, rot=45 if kind.startswith('bar') else 0)
-
 
       # Save the figure to the buffer
       plt.savefig(buf, format='png')

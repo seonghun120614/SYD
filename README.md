@@ -47,7 +47,7 @@ Web Programming Assignment &amp; Usage of Data Visualization
   
   - [✓] Remove temp file `test.csv` and reduce class (removing `Graph`)
   - [✓] Modify `frame.py` to add more graph types
-  - [ ] Add title in graph
+  - [✓] Add title in graph
 
 - [ ] Frontend - Implements Components & Features and Design Layout in App
   - [✓] Styling initial page
