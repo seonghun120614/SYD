@@ -2,12 +2,18 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 
 
-const DownloadButton = () => {
+const DownloadButton = ({ src }) => {
   /**
    * Download button for linked plot in Block tag.
    */
+  
   const handleDownload = () => {
-    console.log("Download Button is clicked.");
+
+    const anchor = document.createElement('a');
+    anchor.href = src;
+    anchor.download = 'plot.png';
+
+    anchor.click();
   };
 
   return (

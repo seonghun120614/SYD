@@ -17,7 +17,7 @@ const Block = ({ src }) => {
         <Plot src={src}/>
       </div>
       <div className="button_position">
-        <DownloadButton />
+        <DownloadButton src={src}/>
       </div>
     </div>
   );
