@@ -56,8 +56,8 @@ Web Programming Assignment &amp; Usage of Data Visualization
     - [✓] Implement Drag & Drop in `CSVUpload.jsx` component
   
   - [✓] Styling Block component
-    - [✓] Create `DownloadButton.jsx`, `Plot.jsx`, `Block.jsx` and `Loading.jsx` components
-    - [✓] Create `DownloadButton.scss`, `Plot.scss`, `Block.scss`, `Loading.scss`
+    - [✓] Create `DownloadButton.jsx`, `Plot.jsx`, `Block.jsx` and `Modal.jsx` components
+    - [✓] Create `DownloadButton.scss`, `Plot.scss`, `Block.scss`, `Modal.scss`
     - [✓] Implement visualizing graphs with response
     - [✓] With modal window technique
       - [✓] Implement loading screen in `Modal.jsx`
