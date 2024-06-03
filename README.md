@@ -60,7 +60,7 @@ Web Programming Assignment &amp; Usage of Data Visualization
     - [✓] Create `DownloadButton.scss`, `Plot.scss`, `Block.scss`, `Loading.scss`
     - [✓] Implement visualizing graphs with response
     - [ ] With modal window technique
-      - [ ] Implement loading screen
+      - [✓] Implement loading screen in `Modal.jsx`
       - [ ] Implement download function
 
   - [ ] Styling responsive web design

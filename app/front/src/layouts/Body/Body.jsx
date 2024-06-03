@@ -1,14 +1,15 @@
 import React, {
-  useState,
-  useEffect
+  useState
 } from "react";
 
 import Block from "../../components/Block/Block";
 import CSVUpload from "../../components/CSVUpload/CSVUpload";
+import Modal from "../../components/Modal/Modal";
 import './Body.css';
 
 const Body = () => {
   const [response, setResponse] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleFileUpload = async (file) => {
     // Make form
@@ -19,6 +20,8 @@ const Body = () => {
 
     formData.append('title', title);
     formData.append('csv', csv);
+
+    setIsLoading(true);
 
     try {
       // Request
@@ -33,11 +36,14 @@ const Body = () => {
       }
     } catch (error) {
       console.error('Error:', error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
   return (
     <main>
+      <Modal isOpen={isLoading} />
       {response === null ? (
         <CSVUpload onFileUpload={handleFileUpload} />
       ) : (
