@@ -1,6 +1,16 @@
-function App() {
+import React from "react";
+
+import Header from "./layouts/Header/Header";
+import Body from "./layouts/Body/Body";
+import Footer from "./layouts/Footer/Footer";
+
+const App = () => {
   return (
-    <h1>hello</h1>
+    <div>
+      <Header />
+      <Body />
+      <Footer />
+    </div>
   );
 }
 

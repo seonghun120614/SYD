@@ -342,6 +342,9 @@ dist-ssr
 *.sln
 *.sw?
 
+# Created by https://www.toptal.com/developers/gitignore/api/sass
+# Edit at https://www.toptal.com/developers/gitignore?templates=sass
+
 ### Sass ###
 .sass-cache/
 *.css.map
@@ -349,3 +352,5 @@ dist-ssr
 *.scss.map
 
 # End of https://www.toptal.com/developers/gitignore/api/sass
+
+/app/back/media/*

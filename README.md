@@ -1,5 +1,5 @@
-# MyBlog
-Web Programming Assignment &amp; Usage of My web blog
+# SYD - Show Your Data
+Web Programming Assignment &amp; Usage of Data Visualization
 
 # 🧑🏼‍💻 Requirements
 - [✓] Initialize Django with Django REST framework
@@ -12,6 +12,7 @@ Web Programming Assignment &amp; Usage of My web blog
   - [✓] Create `Makefile` for managing and building Django project
   - [✓] Install djangorestframework and import
 
+
 - [✓] Initialize React
   - [✓] Create React App & Modify `.gitignore`
   - [✓] Clean unnecessary files or codes
@@ -20,6 +21,9 @@ Web Programming Assignment &amp; Usage of My web blog
   - [✓] Ready for imigrate CRA to Vite
   - [✓] Remove CRA project and rename folders and files for division in back
   - [✓] Add codes `Makefile` for managing and building Vite project
+  - [✓] Add SASS compile command in `Makefile`
+  - [✓] Add react-bootstrap and react-bootstrap-icons for design
+
 
 - [✓] Initialize others (config files, folders, ...)
   - [✓] Setup test api for communication in djangorestframework
@@ -30,12 +34,39 @@ Web Programming Assignment &amp; Usage of My web blog
   - [✓] Modify wrong proxy with proxy for Vite
   - [✓] Initialize all unnecessary settings for pre-test
 
-- [ ] Backend - Create Models & Serializers
-- [ ] Backend - Others
-- [ ] Frontend - Implements Routing
-- [ ] Frontend - UI & Component Design
-- [ ] Frontend - Styling with Sass & Bootstrap
-- [ ] Validate Unit Test
-- [ ] Validate Integrated Test
-- [ ] Refactoring and Find Lazy Loading
-- [ ] Import Guidelines and Documents for Project
+
+- [✓] Backend - Create Models & Serializers or Others
+  - [✓] Create `CSVFile` Model for request, `CSVFileSerializer` Serializer and `CSVFileAPIView` APIView class
+
+  - [✓] Implement transferring binary strings to the frontend server
+    - [✓] Implement `BinaryStringGenerator` Pseudo-Interface
+      - [✓] Define `get_binary_strings()` abstract method
+    
+    - [✓] Implement `Frame` class which is inherted `BinaryStringGenerator` interface
+      - [✓] Make `get_binary_strings()` function
+  
+  - [✓] Remove temp file `test.csv` and reduce class (removing `Graph`)
+  - [✓] Modify `frame.py` to add more graph types
+  - [✓] Add title in graph
+
+- [✓] Frontend - Implements Components & Features and Design Layout in App
+  - [✓] Styling initial page
+    - [✓] Create `CSVUpload.jsx`, `Body.jsx`, `Footer.jsx`, `Header.jsx`
+    - [✓] Create `CSVUpload.scss`, `Body.scss`, `Footer.scss`, `Header.jsx`
+    - [✓] Implement Drag & Drop in `CSVUpload.jsx` component
+  
+  - [✓] Styling Block component
+    - [✓] Create `DownloadButton.jsx`, `Plot.jsx`, `Block.jsx` and `Loading.jsx` components
+    - [✓] Create `DownloadButton.scss`, `Plot.scss`, `Block.scss`, `Loading.scss`
+    - [✓] Implement visualizing graphs with response
+    - [✓] With modal window technique
+      - [✓] Implement loading screen in `Modal.jsx`
+    - [✓] Implement download function
+
+  - [✓] Styling responsive web design
+  - [ ] Create a `RadialMenu.scss` and `RadialMenu.jsx` component
+
+- [✓] Validate Test
+  - [✓] Make `test_csvfile_model.py` for Django model
+  - [✓] Make `test_csvfile_serializer.py` for drf serializer
+  - [✓] Add command test for those test in `Makefile`

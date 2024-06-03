@@ -1,0 +1,20 @@
+.block {
+  position: relative;
+  width: inherit;
+  height: inherit;
+  border-radius: 10px;
+  box-shadow: #333333 0 0 5px;
+}
+
+.plot_position {
+  position: absolute;
+  left: 0;
+}
+
+.button_position {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=Block.css.map */

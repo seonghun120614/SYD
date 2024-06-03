@@ -1,0 +1,13 @@
+footer {
+  width: 100vw;
+  height: 100px;
+  background-color: black;
+  color: white;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    font-size: 0.5em;
+  }
+}

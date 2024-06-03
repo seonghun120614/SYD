@@ -1,5 +1,7 @@
 from django.urls import path
-from . import views
+from .views import CSVFileAPIView
 
 
-urlpatterns = []
+urlpatterns = [
+  path('upload', CSVFileAPIView.as_view(), name="csv-file-api")
+]
