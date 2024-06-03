@@ -22,10 +22,10 @@ class Frame(BinaryStringMethod):
         series = self.frame[col].dropna()
         
         if series.dtype == "float64":
-          result.append(Frame.image_to_binary(series, 'hist'))
+          result.append(Frame.image_to_binary(series, 'hist', 'box', 'line'))
         elif series.dtype == 'object':
           series = series.value_counts()
-          result.append(Frame.image_to_binary(series, 'pie'))
+          result.append(Frame.image_to_binary(series, 'pie', 'bar', 'barh'))
       
       return result
     
@@ -35,15 +35,20 @@ class Frame(BinaryStringMethod):
   
   
   @classmethod
-  def image_to_binary(self, series, kind):
+  def image_to_binary(self, series, *kinds):
     
     if not isinstance(series, pd.Series):
       raise TypeError("The wrong argument received. It must be the instance of pandas.Series")
     
     with io.BytesIO() as buf:
-      fig, ax = plt.subplots()
-      series.plot(ax=ax, kind=kind)
-      
+      fig, axes = plt.subplots(1, 3, figsize=(15, 5))  # 1 row, 3 columns
+
+      # Plot each series in the list with the corresponding kind
+      for ax, kind in zip(axes, kinds):
+        series.plot(ax=ax, kind=kind, rot=45 if kind.startswith('bar') else 0)
+
+
+      # Save the figure to the buffer
       plt.savefig(buf, format='png')
       plt.close(fig)
       

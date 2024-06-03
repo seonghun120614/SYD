@@ -46,7 +46,7 @@ Web Programming Assignment &amp; Usage of Data Visualization
       - [✓] Make `get_binary_strings()` function
   
   - [✓] Remove temp file `test.csv` and reduce class (removing `Graph`)
-  - [ ] Modify `frame.py` to add more graph types
+  - [✓] Modify `frame.py` to add more graph types
   - [ ] Add title in graph
 
 - [ ] Frontend - Implements Components & Features and Design Layout in App

@@ -35,7 +35,7 @@ pipinstall:
 
 reset:
 	find $(BACK_PATH)api/migrations/ -not -name '__init__.py' -delete
-	rm $(BACK_PATH)db.sqlite3
+	rm $(BACK_PATH)db.sqlite3 $(BACK_PATH)media/*.*
 
 downloadmodule:
 	$(PYTHON_VENV) -m pip install $(MODULE)
