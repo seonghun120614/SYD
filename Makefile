@@ -1,6 +1,6 @@
 BACK_PATH = app/back/
 FRONT_PATH = app/front/
-
+APP = api
 
 PYTHON_VENV = $(BACK_PATH)venv/bin/python
 DJANGO = $(BACK_PATH)manage.py
@@ -22,7 +22,8 @@ shell:
 	$(PYTHON_VENV) $(DJANGO) shell
 
 test:
-	$(PYTHON_VENV) $(DJANGO) test
+	$(PYTHON_VENV) $(DJANGO) test $(BACK_PATH)tests
+	rm migrate mkmigrations
 
 mkrqms:
 	$(PYTHON_VENV) -m pip freeze > $(BACK_PATH)requirements.txt

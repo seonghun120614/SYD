@@ -66,7 +66,7 @@ Web Programming Assignment &amp; Usage of Data Visualization
   - [✓] Styling responsive web design
   - [ ] Create a `RadialMenu.scss` and `RadialMenu.jsx` component
 
-- [ ] Validate Unit Test
-- [ ] Validate Integrated Test
-- [ ] Refactoring and Find Lazy Loading
-- [ ] Import Guidelines and Documents for Project
+- [✓] Validate Test
+  - [✓] Make `test_csvfile_model.py` for Django model
+  - [✓] Make `test_csvfile_serializer.py` for drf serializer
+  - [✓] Add command test for those test in `Makefile`
