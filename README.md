@@ -49,19 +49,19 @@ Web Programming Assignment &amp; Usage of Data Visualization
   - [✓] Modify `frame.py` to add more graph types
   - [✓] Add title in graph
 
-- [ ] Frontend - Implements Components & Features and Design Layout in App
+- [✓] Frontend - Implements Components & Features and Design Layout in App
   - [✓] Styling initial page
     - [✓] Create `CSVUpload.jsx`, `Body.jsx`, `Footer.jsx`, `Header.jsx`
     - [✓] Create `CSVUpload.scss`, `Body.scss`, `Footer.scss`, `Header.jsx`
     - [✓] Implement Drag & Drop in `CSVUpload.jsx` component
   
-  - [ ] Styling Block component
+  - [✓] Styling Block component
     - [✓] Create `DownloadButton.jsx`, `Plot.jsx`, `Block.jsx` and `Loading.jsx` components
     - [✓] Create `DownloadButton.scss`, `Plot.scss`, `Block.scss`, `Loading.scss`
     - [✓] Implement visualizing graphs with response
-    - [ ] With modal window technique
-      - [ ] Implement loading screen
-      - [ ] Implement download function
+    - [✓] With modal window technique
+      - [✓] Implement loading screen in `Modal.jsx`
+    - [✓] Implement download function
 
   - [ ] Styling responsive web design
     - [ ] Create a `RadialMenu.scss` and `RadialMenu.jsx` component
