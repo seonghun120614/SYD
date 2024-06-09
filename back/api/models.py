@@ -1,5 +1,4 @@
 from django.db import models
-from django.core.files.uploadedfile import SimpleUploadedFile
 
 
 class CSVFile(models.Model):

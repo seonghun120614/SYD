@@ -3,7 +3,9 @@ import os
 
 
 # Get environmental variables
-env = environ.Env()
+env = environ.Env(
+    DEBUG=(bool, False)
+)
 
 # Setup Root and Apps Directory
 BASE_DIR = APPS_DIR = environ.Path(__file__) - 2
@@ -17,7 +19,3 @@ ROOT_URLCONF = 'config.urls'
 
 # Take variables where in .env file
 environ.Env().read_env(os.path.join(BASE_DIR, '.env'))
-
-# Get SECRET_KEY
-SECRET_KEY = env('SECRET_KEY')
-

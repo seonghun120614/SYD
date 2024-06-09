@@ -1,0 +1,9 @@
+version: '3'
+services:
+  back:
+    image: syd-back:0.1
+    build: ./back
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./back:/SYD/back  # 호스트의 back 폴더와 컨테이너의 /SYD/back를 볼륨으로 공유
