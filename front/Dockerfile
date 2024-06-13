@@ -1,7 +1,13 @@
-FROM nginx:alpine
+FROM node:20
 
 WORKDIR /front
 
-COPY ./dist /usr/share/nginx/html
+COPY package.json .
 
-EXPOSE 80
+RUN yarn install
+
+COPY . .
+
+EXPOSE 8080
+
+CMD ["yarn", "preview", "--port", "8080", "--host", "0.0.0.0"]

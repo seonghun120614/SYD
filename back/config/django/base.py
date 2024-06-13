@@ -46,15 +46,6 @@ TEMPLATES = [
 # Synchronous server config
 WSGI_APPLICATION = 'config.wsgi.application'
 
-# Database config
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'ATOMIC_REQUESTS': True
-    }
-}
-
 # Password validation config
 AUTH_PASSWORD_VALIDATORS = []
 

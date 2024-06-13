@@ -5,13 +5,9 @@ services:
     build: ./back
     ports:
       - "8000:8000"
-    volumes:
-      - ./back:/SYD/back
   
   front:
     image: syd-front:0.1
     build: ./front
     ports:
-      - "80:80"
-    volumes:
-      - ./front:/SYD/front
+      - "8080:8080"
