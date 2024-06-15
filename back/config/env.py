@@ -1,12 +1,6 @@
 import environ
 import os
 
-
-# Get environmental variables
-env = environ.Env(
-    DEBUG=(bool, False)
-)
-
 # Setup Root and Apps Directory
 BASE_DIR = APPS_DIR = environ.Path(__file__) - 2
 
