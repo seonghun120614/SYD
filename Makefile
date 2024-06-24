@@ -1,2 +1,0 @@
-runserver:
-	docker-compose up
