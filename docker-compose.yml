@@ -4,7 +4,7 @@ services:
     image: syd-back:0.1
     build:
       context: ./back
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile.prod
     ports:
       - "8000:8000"
   
@@ -12,6 +12,6 @@ services:
     image: syd-front:0.1
     build:
       context: ./front
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile.prod
     ports:
       - "8080:8080"
