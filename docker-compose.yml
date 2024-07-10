@@ -1,17 +1,30 @@
 version: '3'
 services:
-  back:
-    image: syd-back:0.1
-    build:
-      context: ./back
-      dockerfile: Dockerfile.dev
-    ports:
-      - "8000:8000"
-  
-  front:
-    image: syd-front:0.1
+  web:
+    image: front
+    container_name: syd-front
     build:
       context: ./front
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile.prod
     ports:
-      - "8080:8080"
+      - 8080:80
+      - 80:80
+    depends_on:
+      - api
+    networks:
+      - my_network
+    
+  api:
+    image: back
+    container_name: syd-back
+    build:
+      context: ./back
+      dockerfile: Dockerfile.prod
+    ports:
+      - 8000:8000
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge
