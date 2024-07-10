@@ -1,6 +1,5 @@
 from config.env import *
 
-
 # Application import
 LOCAL_APPS = [
     'api'

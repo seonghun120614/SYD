@@ -6,15 +6,17 @@ export default defineConfig({
   plugins: [
     react(),
   ],
+
   server: {
     proxy: {
       '/api': {
-        target: 'http://host.docker.internal:8000',
+        target: 'http://syd-back:8000/api',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       },
     }
   },
+  
   build: {
     sourcemap: true,
   },
