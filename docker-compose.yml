@@ -5,7 +5,7 @@ services:
     container_name: syd-front
     build:
       context: ./front
-      dockerfile: Dockerfile.prod
+      dockerfile: Dockerfile.local
     ports:
       - 8080:80
     networks:
@@ -16,7 +16,7 @@ services:
     container_name: syd-back
     build:
       context: ./back
-      dockerfile: Dockerfile.prod
+      dockerfile: Dockerfile.local
     ports:
       - 8000:8000
     networks:
