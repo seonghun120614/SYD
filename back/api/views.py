@@ -1,14 +1,11 @@
 import os
-
 from django.conf import settings
-
 from rest_framework.status import (
-  HTTP_201_CREATED,
-  HTTP_400_BAD_REQUEST
+    HTTP_201_CREATED,
+    HTTP_400_BAD_REQUEST
 )
 from rest_framework.views import APIView
-from rest_framework.views import Response
-
+from rest_framework.response import Response
 from .serializers import CSVFileSerializer
 from .models import CSVFile
 from .utils.frame import Frame
@@ -17,15 +14,7 @@ from .utils.frame import Frame
 class CSVFileAPIView(APIView):
     """
     API view for interacting with CSVFile objects.
-
-    This API view provides endpoints for retrieving and creating CSVFile objects.
-    The 'get' method retrieves all CSVFile objects from the database and serializes
-    them using the CSVFileSerializer. The 'post' method allows creating new CSVFile
-    objects by validating the incoming data using CSVFileSerializer and saving them
-    to the database.
-
-    Attributes:
-        serializer_class (CSVFileSerializer): Serializer class used for serializing CSVFile objects.
+    Provides endpoints for retrieving and creating CSVFile objects.
     """
   
     def get(self, request):

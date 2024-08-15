@@ -18,12 +18,9 @@ services:
 >>>>>>> develop
     build:
       context: ./front
-      dockerfile: Dockerfile.prod
+      dockerfile: Dockerfile.local
     ports:
       - 8080:80
-      - 80:80
-    depends_on:
-      - api
     networks:
       - my_network
     
@@ -32,7 +29,7 @@ services:
     container_name: syd-back
     build:
       context: ./back
-      dockerfile: Dockerfile.prod
+      dockerfile: Dockerfile.local
     ports:
       - 8000:8000
     networks:
