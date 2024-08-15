@@ -1,6 +1,5 @@
 version: '3'
 services:
-<<<<<<< HEAD
   back:
     image: syd-back:0.1
     build:
@@ -11,11 +10,6 @@ services:
   
   front:
     image: syd-front:0.1
-=======
-  web:
-    image: front
-    container_name: syd-front
->>>>>>> develop
     build:
       context: ./front
       dockerfile: Dockerfile.local
