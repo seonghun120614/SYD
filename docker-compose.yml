@@ -12,20 +12,9 @@ services:
     image: syd-front:0.1
     build:
       context: ./front
-      dockerfile: Dockerfile.local
+      dockerfile: Dockerfile.prod
     ports:
       - 8080:80
-    networks:
-      - my_network
-    
-  api:
-    image: back
-    container_name: syd-back
-    build:
-      context: ./back
-      dockerfile: Dockerfile.local
-    ports:
-      - 8000:8000
     networks:
       - my_network
 
