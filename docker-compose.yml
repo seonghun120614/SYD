@@ -1,13 +1,19 @@
 version: '3'
 services:
   back:
-    image: syd-back:0.1
-    build: ./back
+    container_name: "back"
+    build:
+      context: ./back
+      dockerfile: Dockerfile.local
     ports:
       - "8000:8000"
   
   front:
-    image: syd-front:0.1
-    build: ./front
+    container_name: "front"
+    build:
+      context: ./front
+      dockerfile: Dockerfile.local
     ports:
-      - "8080:8080"
+      - 80:80
+    depends_on:
+      - back

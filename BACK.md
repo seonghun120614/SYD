@@ -15,10 +15,22 @@
   - [✓] Add `app/back/api/serializers.py` for testing
   - [✓] Add django-cors-headers module and setup communication in django
 
-- [✓] Create Models & Serializers or Others
-  - [✓] Create `CSVFile` Model for request, `CSVFileSerializer` Serializer and `CSVFileAPIView` APIView class
-  - [✓] Implement transferring binary strings to the frontend server
-    - [✓] Implement `BinaryStringGenerator` Pseudo-Interface
-      - [✓] Define `get_binary_strings()` abstract method
-    - [✓] Implement `Frame` class which is inherted `BinaryStringGenerator` interface
-      - [✓] Make `get_binary_strings()` function
+
+- [✓] Visualizing Service
+  - [✓] `CSVFile` Model
+  - [✓] `CSVFileSerializer` Serializer
+  - [✓] `CSVFileAPIView` APIView class
+
+  - [✓] Others
+    - [✓] `BinaryStringGenerator` Pseudo-Interface
+      - [✓] `get_binary_strings()` abstract method
+    
+    - [✓] `Frame` class with `BinaryStringGenerator`
+      - [✓] `get_binary_strings()` method
+
+
+- [ ] Login Service
+  - [ ] `User` Model for repository
+  - [ ] `UserFormSerializer` Serializer
+  - [ ] `LoginView` APIView
+
