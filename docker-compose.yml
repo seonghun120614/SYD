@@ -1,7 +1,7 @@
 version: '3'
 services:
   back:
-    image: syd-back:0.1
+    image: back
     build:
       context: ./back
       dockerfile: Dockerfile.prod
@@ -9,15 +9,13 @@ services:
       - "8000:8000"
   
   front:
-    image: syd-front:0.1
+    image: front
     build:
       context: ./front
       dockerfile: Dockerfile.prod
+    volumes:
+      - ./front/nginx.conf:/etc/nginx/nginx.conf
     ports:
       - 8080:80
-    networks:
-      - my_network
-
-networks:
-  my_network:
-    driver: bridge
+    depends_on:
+      - back
