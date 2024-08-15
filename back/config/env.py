@@ -1,15 +1,7 @@
 import environ
 import os
 
-<<<<<<< HEAD
 # Setup Root and Apps Directory
-=======
-
-env = environ.Env(
-    DEBUG=(bool, True)
-)
-
->>>>>>> develop
 BASE_DIR = APPS_DIR = environ.Path(__file__) - 2
 
 environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
