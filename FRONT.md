@@ -21,17 +21,8 @@
     - [✓] `Header.jsx` layout
     - [✓] `Modal` component
 
-- [✓] Visualizing Service
-  - [✓] `Block` component
-    - [✓] with `Block`
-    - [✓] with `DownloadButton`
-    - [✓] with `Plot`
-  - [✓] `CSVUpload` component
+- [ ] Option Page
 
 - [ ] Convenient Service
   - [ ] `Menu` component
   - [ ] `RadialMenu` component
-
-- [ ] Login Service
-  - [ ] `Login` layout
-  - [ ] `LoginForm` layout
