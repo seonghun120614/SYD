@@ -15,22 +15,25 @@
   - [✓] Add `app/back/api/serializers.py` for testing
   - [✓] Add django-cors-headers module and setup communication in django
 
+- [✓] Upload API
+  - [✓] `File` Model
+  - [✓] `FileSerializer` Serializer
+  - [✓] `FileAPIView` APIView class
 
-- [✓] Visualizing Service
-  - [✓] `CSVFile` Model
-  - [✓] `CSVFileSerializer` Serializer
-  - [✓] `CSVFileAPIView` APIView class
+- Visualizing API
+  - Graph Class
+    - [ ] set_font()
+    - [ ] set_font_size()
+    - [ ] set_size()
+    - [ ] set_title()
+    - [ ] set_plot()
 
-  - [✓] Others
-    - [✓] `BinaryStringGenerator` Pseudo-Interface
-      - [✓] `get_binary_strings()` abstract method
+    - Plot Class
+      - [ ] set_axis()
+      - [ ] set_color()
+      - [ ] set_range()
+      - [ ] set_background()
+      - [ ] set_perspective()
     
-    - [✓] `Frame` class with `BinaryStringGenerator`
-      - [✓] `get_binary_strings()` method
-
-
-- [ ] Login Service
-  - [ ] `User` Model for repository
-  - [ ] `UserFormSerializer` Serializer
-  - [ ] `LoginView` APIView
+    - [ ] describe()
 
