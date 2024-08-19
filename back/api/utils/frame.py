@@ -29,13 +29,13 @@ class Frame(BinaryStringMethod):
         """
         try:
             result = []
-            columns = self.frame.columns
 
-            for col in columns:
-                series = self.frame[col].dropna()
+            for col in self.frame.columns:
+                series = self.frame[col]
 
                 if series.dtype == "float64":
                     result.append(Frame.image_to_binary(series, "hist", "box", "line"))
+                    
                 elif series.dtype == "object":
                     series = series.value_counts()
                     result.append(Frame.image_to_binary(series, "pie", "bar", "barh"))

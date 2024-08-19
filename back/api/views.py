@@ -6,52 +6,46 @@ from rest_framework.status import (
 )
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from .serializers import CSVFileSerializer
-from .models import CSVFile
+from .serializers import FileSerializer
+from .models import File
 from .utils.frame import Frame
 
 
-class CSVFileAPIView(APIView):
+class FileUplaodAPIView(APIView):
     """
-    API view for interacting with CSVFile objects.
-    Provides endpoints for retrieving and creating CSVFile objects.
+    API view for interacting with File objects.
+    Provides endpoints for retrieving and creating File objects.
     """
   
     def get(self, request):
       """
-      Retrieve all CSVFile objects.
+      Retrieve all File objects.
 
       Returns:
-          Response: A response containing serialized CSVFile objects.
+          Response: A response containing serialized File objects.
       """
       
-      csv_files = CSVFile.objects.all()
-      serializer = CSVFileSerializer(csv_files, many=True)
+      csv_files = File.objects.all()
+      serializer = FileSerializer(csv_files, many=True)
       
       return Response(serializer.data)
   
     def post(self, request):
         """
-        Create a new CSVFile object.
+        Create a new File object.
 
         Args:
-            request (Request): The HTTP request containing the data to create the CSVFile object.
+            request (Request): The HTTP request containing the data to create the File object.
 
         Returns:
-            Response: A response containing the serialized CSVFile object if creation is successful,
+            Response: A response containing the serialized File object if creation is successful,
             or errors if the provided data is invalid.
         """
-        serializer = CSVFileSerializer(data=request.data)
+        serializer = FileSerializer(data=request.data)
         
         if serializer.is_valid():
             serializer.save()
             
-            # Generate binary strings for the uploaded CSV file
-            title = serializer.validated_data['title']
-            f = Frame(os.path.join(settings.MEDIA_ROOT, title+'.csv'))
-            
-            binary_strings = f.get_binary_strings()  # Generate binary strings
+        else:
+            return Response(serializer.errors, status=HTTP_400_BAD_REQUEST)
 
-            return Response(binary_strings, status=HTTP_201_CREATED)
-        
-        return Response(serializer.errors, status=HTTP_400_BAD_REQUEST)
