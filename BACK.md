@@ -20,20 +20,24 @@
   - [✓] `FileSerializer` Serializer
   - [✓] `FileAPIView` APIView class
 
-- Visualizing API
-  - Graph Class
-    - [ ] set_font()
-    - [ ] set_font_size()
-    - [ ] set_size()
-    - [ ] set_title()
-    - [ ] set_plot()
+- Services
+  - Visualizing API
+    - [✓] Board
+      - Member Variables
+        - fig, axs, graphs, source_table, numerical_variables, categorical_variables, datetime_variables
+      
+      - Methods
+        - [✓] choose(): choose plot type in various plot types
+        - [✓] draw(): show all graphs
+        - [✓] set(): setting variables of specific graph
+        - [✓] resize(): adjust the board size
 
-    - Plot Class
-      - [ ] set_axis()
-      - [ ] set_color()
-      - [ ] set_range()
-      - [ ] set_background()
-      - [ ] set_perspective()
-    
-    - [ ] describe()
+- Utils
+  - [ ] Graph
+    - Member Variables
+      - axis, plot_type
 
+    - Methods
+      - [ ] show(): show graph(
+        [✓] bar, [ ]hist, [ ]scatter, [ ]line
+      )

@@ -1,9 +1,13 @@
+"""
+Old Visualizing File
+"""
+
 import io
 import base64
 
 import matplotlib
-
 matplotlib.use("Agg")  # Using 'Agg' backend to generate plots without GUI
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
