@@ -12,4 +12,4 @@ class BoardException(Exception):
         self.msg = msg
     
     def __str__(self):
-        return f"[System] {msg}"
+        return f"[System] {self.msg}"
