@@ -5,7 +5,9 @@ WORKDIR /back
 COPY . ./
 
 RUN pip install --no-cache-dir -r /back/requirements.txt && \
-    python3 manage.py makemigrations && python3 manage.py migrate
+    export SECRET_KEY=temp_key_for_build && \
+    python3 manage.py makemigrations && \
+    python3 manage.py migrate
 
 EXPOSE 8000
 
